@@ -32,21 +32,23 @@ If you see something that looks like this you are setup and ready to start the e
 In this exercise we imagine you are working as the data analyst on a product team along side a product manager, developers, and designers. 
 The team is looking to improve features related to the emails we send to our users.
 To that end, the team is thinking it would be good for you review data related to emails we have been sending lately. 
-They hope you will be able to answer some basic questions the group brainstormed at the project kickoof.
+They hope you will be able to answer some basic questions the group brainstormed at the project kickoff.
 
 ### About the datasets
 Before you start your analysis, first review the descriptions of the datasets below to make sure you understand the data. If you have any questions about the meaning of a column contact us.
 #### Dataset: email_data.csv
-This is dataset contains samples of the emails we sent over about a year period. Each row represents an email that was sent to a user. This dataset represents a small fraction of the emails we have sent over the time period covered by the data.
+This is dataset contains samples of the emails we sent.
+Each row represents an email that was sent to a user.
+This dataset represents a small fraction of the emails we have sent over the time period spanned by the samples.
 
 Column Name | Description
 --- | ---
 LogId | A unique number used to represent each individual email that was sent
 EmailSentDateTimeUtc | The date and time the email was sent in coordinated universal time
-EmailCampaignId | A unique number used to represent each email campaign. Multiple users can recieve emails multiple times from the same email campaign.
+EmailCampaignId | A unique number used to represent each email campaign. Multiple users can receive emails multiple times from the same email campaign.
 EmailOpenedDateTimeUtc | The date and time the email was opened. Null if the user did not open the email
-EmailClickedDateTimeUtc | The date and time the a link in the email was clicked by the user. Null if the user did not click any links in the email.
-UserId | A unique number used to represent each user that is assigned in ascending order as users register at FieldLevel
+EmailClickedDateTimeUtc | The date and time the 'call to action' button or link in the email was clicked by the user. Null if the user did not click anything in the email.
+UserId | A unique number used to represent each user. The number is assigned in ascending order as users register at FieldLevel, e.g. the x < y implies x registered before y.
 AddressData | A string in JSON format. May be null as not all users have provided an address. The field contains the 5 digit zip code of an address the user provided. Note the format of the JSON object varies. A zipcode will always be identified by the key 'ZipCode'. Some 'ZipCode' keys are duplicated. Some have null values. Some are preceeded by extranious letters.
 
 #### Dataset: activity_data.csv
