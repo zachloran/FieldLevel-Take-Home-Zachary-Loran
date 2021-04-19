@@ -61,14 +61,18 @@ DateOfActivityPST | A date a user made an authenticated request to our servers i
 ActivityCount | The number of pages/requests the user made on that day. Users who spend more time on FieldLevel have a higher activity count.
 
 ### Questions
-For each question below create a new code cell in the Exercise.ipynb notebook. Start the code cell with a comment indicating the question it is answering. Then write and execute the code you feel is required to answer the question. Finally, if the question requires it, print a _brief_ response (1 or 2 sentences) summarizing your answer.
+For each question below create a new code cell in the Exercise.ipynb notebook. 
+Start the code cell with a comment indicating the question it is answering. 
+Then write and execute the code you feel is required to answer the question.
+Show your work and describe your thought process.
+The goal is to help us understand how you approach analysis.
 1. How many rows are in the two datasets? 
 If the log of emails represents 3% of the emails we sent over this period, how many emails did we send?
 (use python to print the numbers and display them nicely with commas)
-1. What are the earliest and most recent dates of emails sent in this dataset in California time? (use python to print the date in format mm/dd/yyy hour:minute in 24 hour time)
+1. What are the earliest and most recent dates of emails sent in this dataset in California time (Pacific Standard Time Zone)? (use python to print the date in format mm/dd/yyy hour:minute in 24 hour time)
 1. Which 10 zip codes receive the most emails and how many emails do they receive?
-1. Create a single line graph. 
-Make sure the graph is communicates clearly to team members not used to looking at the data (e.g. the axis make sense, labels are clear, there's a title, etc.)
+1. Plot a single graph. 
+Make sure the graph communicates clearly to team members not used to looking at the data (e.g. the axis make sense, labels are clear, there's a title, etc.)
 Plot two data sets: 
     - total distinct users who got at least 1 email by month
     - the monthly the percentage of users who were sent an email and were active the same day
