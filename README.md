@@ -22,12 +22,17 @@ The fastest way to do that on my mac was:
 1. Navigate to repository in a console
 1. Run `jupyter notebook`
 1. Open webrowser (if it didn't open automatically) and navigate to http://localhost:[8888]/notebooks/Exercise.ipynb where [8888] is the port jupeter is running on.
-1. Import the pandas library into the the first cell of the jupyter notebook and then load the datasets email_data.csv and activity_data.csv via the read csv function. The datasets are comma `,` delimited. Display the head of the dataframes. If you see something that looks like this you are setup and ready to start the exercise:
+1. Import the pandas library into the the first cell of the jupyter notebook and then load the datasets `email_data.csv` and `activity_data.csv` via the read csv function. The datasets are comma `,` delimited. 
+Display the head of the dataframes. 
+If you see something that looks like this you are setup and ready to start the exercise:
 
 ![Complete Setup](docs/SetupCompleteScreenShot.png)
 
 ## Exercise
-In this exercise we imagine you are working as the data analyst on a product team along side a product manager, developers, and designers. The team is looking to improve features related to the emails we send to our users. To that end, the team is thinking it would be good for you review data related to emails we have been sending lately. They hope you will be able to answer some basic questions the group brainstormed at the project kickoof.
+In this exercise we imagine you are working as the data analyst on a product team along side a product manager, developers, and designers. 
+The team is looking to improve features related to the emails we send to our users.
+To that end, the team is thinking it would be good for you review data related to emails we have been sending lately. 
+They hope you will be able to answer some basic questions the group brainstormed at the project kickoof.
 
 ### About the datasets
 Before you start your analysis, first review the descriptions of the datasets below to make sure you understand the data. If you have any questions about the meaning of a column contact us.
