@@ -101,7 +101,8 @@ In preparation for the experiment launch, plot a graph comparing the probability
 In a paragraph, describe whether you think this is a good experimental design.
 In particular, what is good about the strategy for assigning users to experimental groups and what concerns do you have.
 1. Finally, the product manager is worried emails are not having the impact we think.
-In particular they are concerned that unengaged users do not open or click on emails and because of this, efforts to re-engage users that focus on email will not be effective.
+In particular they are concerned that unengaged users (users who have not logged into FieldLevel for 6 months) do not open or click on emails and because of this, efforts to re-engage users that focus on email will not be effective. 
+The PM would like you to explore whether there is evidence that emails are effective with engaged users (users who log in without emails prompting them) but not effective on unengaged users.
 Explore the data, visualizing the relationship between emails sent and user activity both in login and activity count.
 Write a paragraph to support or argue against the product managers concern.
 Use statistical methods support your conclusion but balance that with plain language that non-technical users can understand.
