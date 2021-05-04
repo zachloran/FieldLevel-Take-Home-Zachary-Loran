@@ -46,8 +46,8 @@ Column Name | Description
 LogId | A unique number used to represent each individual email that was sent
 EmailSentDateTimeUtc | The date and time the email was sent in coordinated universal time
 EmailCampaignId | A unique number used to represent each email campaign. Multiple users can receive emails multiple times from the same email campaign.
-EmailOpenedDateTimeUtc | The date and time the email was opened. Null if the user did not open the email
-EmailClickedDateTimeUtc | The date and time the 'call to action' button or link in the email was clicked by the user. Null if the user did not click anything in the email.
+EmailOpenedDateTimeUtc | The date and time the email was opened in coordinated universal time (UTC). Null if the user did not open the email
+EmailClickedDateTimeUtc | The date and time in coordinated universal time (UTC) the 'call to action' button or link in the email was clicked by the user. Null if the user did not click anything in the email.
 UserId | A unique number used to represent each user. The number is assigned in ascending order as users register at FieldLevel, e.g. the x < y implies x registered before y.
 AddressData | A string in JSON format. May be null as not all users have provided an address. The field contains the 5 digit zip code of an address the user provided. Note the format of the JSON object varies. A zipcode will always be identified by the key 'ZipCode'. Some 'ZipCode' keys are duplicated. Some have null values. Some are preceeded by extranious letters.
 
@@ -57,7 +57,7 @@ This is dataset contains a daily log of user activity. If any user represented i
 Column Name | Description
 --- | ---
 UserId | A unique number used to represent each user that is assigned in ascending order as users register at FieldLevel
-DateOfActivityPST | A date a user made an authenticated request to our servers in pacific standard time.
+DateOfActivityPST | A date a user made an authenticated request to our servers in pacific standard time (PST).
 ActivityCount | The number of pages/requests the user made on that day. Users who spend more time on FieldLevel have a higher activity count.
 
 ### Questions
@@ -74,10 +74,11 @@ If the log of emails represents 3% of the emails we sent over this period, how m
 1. Plot a single graph. 
 Make sure the graph communicates clearly to team members not used to looking at the data (e.g. the axis make sense, labels are clear, there's a title, etc.)
 Plot two data sets: 
-    - total distinct users who got at least 1 email by month
+    - total distinct users who got at least 1 email by month and year.
     - the monthly the percentage of users who were sent an email and were active the same day
 1. All the emails we send contain at least one link users can click which should send them to the FieldLevel app (where they would login and become active for that day).
-The team is curious if any of the links are broken (i.e. the email template has links to click but they are mis-configured and don't actually send people to our app).
+The team is curious if any of the links are broken.
+A broken link would be indicated by a record of email sent and clicked but no record of user activity on the day of the click.
 Estimate how many emails (by EmailCampaignId) may have broken links.
 If you find an EmailCampaignId that has possible broken links, estimate an upper bound for the number of users it has effected and the probability a user who gets email from us has experienced a broken link multiple times.
 For your answer, write a paragraph using clear language that non-technical members of the team will understand.
