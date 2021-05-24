@@ -74,7 +74,7 @@ If the log of emails represents 3% of the emails we sent over this period, how m
 1. Plot a single graph. 
 Make sure the graph communicates clearly to team members not used to looking at the data (e.g. the axis make sense, labels are clear, there's a title, etc.)
 Plot two data sets: 
-    - total distinct users who got at least 1 email by month and year.
+    - total distinct users who were sent at least 1 email by month and year.
     - the monthly the percentage of users who were sent an email and were active the same day
 1. All the emails we send contain at least one link users can click which should send them to the FieldLevel app (where they would login and become active for that day).
 The team is curious if any of the links are broken.
